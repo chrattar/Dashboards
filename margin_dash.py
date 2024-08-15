@@ -1,6 +1,7 @@
 from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
 import pandas as pd
+import numpy as np
 
 # Load your data
 df = pd.read_csv('data.csv')
