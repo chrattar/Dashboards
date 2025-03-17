@@ -8,7 +8,8 @@ custom_theme = {'bgcolor': '#0E1117', 'font_color': '#FFFFFF', 'accent_color': '
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('path', encoding='utf-8')  # or encoding='cp1252'
+    file_path = os.path.join(os.path.dirname(__file__), "data", "neo_v2.csv")
+    df = pd.read_csv(filepath)  # or encoding='cp1252'
     return df
 
 df = load_data()
