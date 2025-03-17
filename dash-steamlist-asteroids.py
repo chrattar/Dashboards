@@ -8,7 +8,7 @@ custom_theme = {'bgcolor': '#0E1117', 'font_color': '#FFFFFF', 'accent_color': '
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('C:\\nasaneo\\dashboards\\dash_hazard\\data\\orbits.csv', encoding='utf-8')  # or encoding='cp1252'
+    df = pd.read_csv('path', encoding='utf-8')  # or encoding='cp1252'
     return df
 
 df = load_data()
